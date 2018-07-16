@@ -1,6 +1,8 @@
 ---
 - hosts: all
-  gather_facts: yes 
+  gather_facts: yes
+
+
   win_file:
     path: C:\Development
     state: directory
