@@ -1,5 +1,5 @@
----
-- hosts: all
+- name: Tcook test 
+  hosts: windows
   gather_facts: yes
 
 
