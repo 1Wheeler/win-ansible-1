@@ -1,7 +1,7 @@
 ---
 # This playbook makes a buncha dirs
 - name: Make a Dir
-  hosts: windows
+  hosts: all
   gather_facts: false
   tasks:
     - name: Make a Dir
