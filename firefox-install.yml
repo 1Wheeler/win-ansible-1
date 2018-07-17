@@ -1,11 +1,10 @@
 ---
-- name: Install IIS
+# This playbook makes a buncha dirs
+- name: Make a Dir
   hosts: windows
-  gather_facts: true
+  gather_facts: false
   tasks:
-   - win_feature:
-       name: "windows"
-       state: present
-       restart: yes
-       include_sub_features: yes
-       include_management_tools: yes
+    - name: Make a Dir
+      win_file:
+              path: C:\Temp\folder\subfolder
+              state: directory
