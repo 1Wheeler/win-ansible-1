@@ -2,7 +2,7 @@
 - hosts: all
   gather_facts: false
   tasks:
-    - name: Make some Directory
+    - name: Make a Directory
       win_file:
               path: C:\Temp\folder\subfolder
               state: directory
