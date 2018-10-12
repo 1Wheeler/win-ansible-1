@@ -17,5 +17,5 @@
 
     - name: Make a couple Directories
       win_file:
-              path: 'C:\Temp\{{ user_data }}''
+              path: 'C:\Temp\{{ user_data }}'
               state: directory
