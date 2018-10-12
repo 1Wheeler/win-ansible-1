@@ -1,5 +1,7 @@
 ---
 - hosts: all
+  vars:
+    user_data_file: "C:\Windows\Temp\ansiblevars"
   gather_facts: false
   tasks:
     - name: Make a couple Directories
