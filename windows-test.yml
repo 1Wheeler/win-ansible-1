@@ -5,7 +5,7 @@
   vars:
     user_data_file: 'C:\Windows\ansiblevars.yml'
   vars_files:
-    src: "{{ user_data_file }}"
+    - C:/Windows\ansiblevars.yml
 
 
 
