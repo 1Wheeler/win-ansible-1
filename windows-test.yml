@@ -14,7 +14,7 @@
 
     - name: Decode data and store as fact # You can skip this if you want to use the right hand side directly...
       set_fact:
-        user_data: "{{ slurped_user_data | to_yaml }}"
+        user_data: "{{ slurped_user_data | from_yaml }}"
     - debug: var=slurped_user_data
 
 
