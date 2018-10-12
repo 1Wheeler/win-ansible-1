@@ -20,7 +20,7 @@
         user_data: "{{ slurped_user_data  }}"
     - debug: var=slurped_user_data
     - debug:
-        msg: "Public key: {{ slurped_user_data['content'] }}"
+        msg: "Public key: {{ slurped_user_data['content']  | b64decode }}"
 
 
 
