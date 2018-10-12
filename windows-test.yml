@@ -11,8 +11,7 @@
       slurp:
         src: "{{ user_data_file }}"
       register: slurped_user_data
-    - debug:
-      msg: "{{ user_data_file['content'] | b64decode }}"
+    - debug: vars="{{ user_data_file['content'] | b64decode }}"
 
     - name: Decode data and store as fact # You can skip this if you want to use the right hand side directly...
       set_fact:
