@@ -1,11 +1,8 @@
 ---
 - hosts: all
-
-  gather_facts: false
   vars:
     user_data_file: 'C:\Windows\ansiblevars.yml'
-  vars_files:
-    path: "C:\\Windows\\ansiblevars.yml"
+  gather_facts: false
 
 
 
@@ -23,7 +20,8 @@
         user_data: "{{ slurped_user_data  }}"
     - debug: var=slurped_user_data
     - debug:
-        msg: "Public key: {{ slurped_user_data['content']  | b64decode }}"
+        msg: "Public key: {{ slurped_user_data['content']  | b64decode}}"
+
 
 
 
