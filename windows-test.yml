@@ -5,6 +5,7 @@
   gather_facts: false
 
 
+
   tasks:
     - name: Load data
       slurp:
@@ -17,5 +18,7 @@
 
     - name: Make a couple Directories
       win_file:
-              path: 'C:\Temp\{{ user_data }}'
+              path: 'C:\Temp\tcooktess1'
               state: directory
+    - debug:
+      msg: "System {{ user_data }} "
