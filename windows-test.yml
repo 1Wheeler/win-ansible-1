@@ -1,7 +1,7 @@
 ---
 - hosts: all
   vars:
-    user_data_file: 'C:\Windows\Temp\ansiblevars.yml'
+    user_data_file: 'C:\Windows\ansiblevars.yml'
   gather_facts: false
 
 
