@@ -1,7 +1,5 @@
 ---
 - hosts: all
-  vars:
-     contents: "{{ lookup('file', 'C:\Windows\Temp\ansiblevars') }}"
   gather_facts: false
   tasks:
     - name: Make a couple Directories
