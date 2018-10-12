@@ -17,12 +17,12 @@
       set_fact:
         user_data: "{{ slurped_user_data }}"
     - debug: var=slurped_user_data
-  
+
 
 
 
 
     - name: Make a couple Directories
       win_file:
-              path: 'C:\Temp\tcooktess1'
+              path: 'C:\Temp\{{ slurped_user_data.Direcory1 }}'
               state: directory
