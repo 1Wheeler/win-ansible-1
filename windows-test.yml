@@ -11,14 +11,16 @@
       slurp:
         src: "{{ user_data_file }}"
       register: slurped_user_data
-    - debug: var=user_data_file
+
 
 
 
     - name: Decode data and store as fact # You can skip this if you want to use the right hand side directly...
       set_fact:
         user_data: "{{ slurped_user_data  }}"
-    - debug: var=slurped_user_data.stdout
+    - debug: var=slurped_user_data
+    - debug:
+        msg: "Public key: {{ slurped_user_data }}"
 
 
 
