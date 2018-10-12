@@ -3,11 +3,11 @@
   vars:
     user_data_file: 'C:\Windows\ansiblevars.yml'
 
-  
+
   gather_facts: false
 
   vars_files:
-    - $user_data_file
+    - "{{ user_data_file }}"
 
 
 
