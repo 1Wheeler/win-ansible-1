@@ -1,8 +1,10 @@
 ---
 - hosts: all
+  vars:
+     contents: "{{ lookup('file', 'C:\Windows\Temp\ansiblevars') }}"
   gather_facts: false
   tasks:
     - name: Make a couple Directories
       win_file:
-              path: C:\Temp\test-tcook01
+              path: C:\Temp\asdf
               state: directory
