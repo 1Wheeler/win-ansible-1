@@ -4,5 +4,5 @@
   tasks:
     - name: Make a couple Directories
       win_file:
-              path: C:\Temp\asdf123
+              path: C:\Temp\{{ Directory1 }}
               state: directory
