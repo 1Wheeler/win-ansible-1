@@ -1,8 +1,13 @@
 ---
 - hosts: all
+  vars
+    contents: "{{ lookup('file', 'C:\temp\ansiblevars') }}"
   gather_facts: false
   tasks:
-    - name: Make a Directory
+    - name: Make a couple Directories
       win_file:
-              path: C:\Temp\folder\subfolder
+              path: "C:\temp\script_created\{{Directory1}}"
+              state: directory
+      win_file:
+              path: "C:\temp\script_created\{{Directory2}}"
               state: directory
