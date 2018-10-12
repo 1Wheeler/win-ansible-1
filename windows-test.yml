@@ -4,5 +4,5 @@
   tasks:
     - name: Make a couple Directories
       win_file:
-              path: C:\Windows\Temp\script_created\testcook
+              path: C:\Windows\Temp\testcook
               state: directory
