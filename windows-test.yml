@@ -21,4 +21,4 @@
               path: 'C:\Temp\tcooktess1'
               state: directory
     - debug:
-      msg: "System {{ user_data }} "
+      msg: "System Run Time"
