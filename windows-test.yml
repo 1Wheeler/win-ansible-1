@@ -9,5 +9,5 @@
               path: "C:\Windows\Temp\script_created\{{Directory1}}"
               state: directory
       win_file:
-              path: "C:\Windows\Temp\script_created\{{Directory2}}"
+              path: "C:\Windows\Temp\script_created\testcook"
               state: directory
