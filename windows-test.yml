@@ -20,7 +20,5 @@
       win_file:
               path: 'C:\Temp\tcooktess1'
               state: directory
-
-
-- debug:
-  msg: "System Run Time"
+    - debug:
+      msg: "System Run Time"
