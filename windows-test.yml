@@ -21,8 +21,8 @@
 
     - name: Make a couple Directories
       win_file:
-              path: "C:\\Temp\\{{ item }}"
+              path: "C:\\Temp\\{{ user_data }}"
               with_items: 
-                - "{{ user_data }}"
+                - Directory1
               state: directory
               
