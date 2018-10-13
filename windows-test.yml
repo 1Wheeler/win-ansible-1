@@ -22,6 +22,10 @@
     - name: Make a couple Directories
       win_file:
               path: "C:\\Temp\\{{ user_data }}"
-              with_items: "{{ user_data.Directory }}"
+              with_items: 
+                -Directory1
+                -Directory1
+                -Directory3
+                -Directory4
               state: directory
               
