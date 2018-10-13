@@ -21,9 +21,9 @@
 
     - name: Make a couple Directories
       win_file:
-              path: "C:\\Temp\\{{ user_data.value }}"
+              path: "C:\\Temp\\{{ item }}"
               with_items: 
-                -user_data.Directory1
+                - "{{ nested_list }}"
                 -Directory2
                 -Directory3
                 -Directory4
