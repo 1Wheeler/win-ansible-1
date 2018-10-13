@@ -15,8 +15,6 @@
     - debug:
         msg: "{{ slurped_user_data.content | b64decode }}"
 
-    - debug: var= user_data
-    
     - name: "Re-run setup to use custom facts"
       setup: ~
 
