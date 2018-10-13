@@ -17,9 +17,10 @@
 
     - name: "Re-run setup to use custom facts"
       setup: ~
-
+    
+    {% for Directory in user_data %}
     - name: Make a couple Directories
-      {% for Directory in user_data %}
       win_file:
               path: "C:\\Temp\\{{ user_data.Directory }}" 
               state: directory
+    {% endfor %} 
