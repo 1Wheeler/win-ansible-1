@@ -20,8 +20,8 @@
       win_file:
               path: "C:\\Temp\\{{ user_data }}"
               state: directory
-              with_items:
-                - 'Directory1'
-                - 'Directory2'
-                - 'Directory3'
-                - 'Directory4'
+      with_items:
+       - 'Directory1'
+       - 'Directory2'
+       - 'Directory3'
+       - 'Directory4'
