@@ -19,7 +19,7 @@
       setup: ~
 
     - name: Make a couple Directories
+      {% for Directory in user_data %}
       win_file:
-              {% for Directory in user_data %}
               path: "C:\\Temp\\{{ user_data.Directory }}" 
               state: directory
