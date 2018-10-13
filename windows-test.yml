@@ -18,5 +18,5 @@
 
     - name: Make a couple Directories
       win_file:
-              path: "C:\\Temp\\{{  slurped_user_data.content | b64decode }}"
+              path: "C:\\Temp\\{{ user_data }}"
               state: directory
