@@ -2,7 +2,6 @@
 - hosts: all
   vars:
     user_data_file: 'C:\Windows\ansiblevars.json'
-  gather_facts: false
 
   tasks:
     - name: Load data
