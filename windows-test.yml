@@ -12,8 +12,6 @@
 
     - name: Decode data and store as fact # You can skip this if you want to use the right hand side directly...
       set_fact:
-      - set_fact: {"{{ item.key }}":"{{ item.val }}"}
-          with_dict: "{{response.json.ansible_facts.list_of_passwords}}"
         user_data: "{{ slurped_user_data.content | b64decode }}"
     - debug:
         msg: "{{ slurped_user_data.content | b64decode }}"
