@@ -17,7 +17,7 @@
         msg: "{{ slurped_user_data.content | b64decode }}"
 
 
-    - debug: var=Directory1
+    - debug: var= "Directory1"
     
     - name: "Re-run setup to use custom facts"
       setup: ~
