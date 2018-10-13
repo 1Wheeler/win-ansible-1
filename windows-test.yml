@@ -18,13 +18,13 @@
 
 
     - name: See if Directory1 is a var
-        debug: var= "Directory1"
+        debug: var=Directory1
     
     - name: "Re-run setup to use custom facts"
       setup: ~
     
     - name: See if Directory1 is a var
-        debug: var= "Directory1"
+        debug: var=Directory1
         
     - name: Make a couple Directories
       win_file:
