@@ -20,7 +20,7 @@
     - debug: var=Directory1
     
     - name: "Re-run setup to use custom facts"
-       setup: ~
+      setup: ~
     
     - name: Make a couple Directories
       win_file:
