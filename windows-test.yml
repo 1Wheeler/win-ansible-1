@@ -24,8 +24,5 @@
               path: "C:\\Temp\\{{ item }}"
               with_items: 
                 - "{{ nested_list }}"
-                -Directory2
-                -Directory3
-                -Directory4
               state: directory
               
