@@ -20,8 +20,6 @@
     - name: "Re-run setup to use custom facts"
       setup: ~
 
-    - debug: var= ansible_Directory1 
-        
     - name: Make a couple Directories
       win_file:
               path: C:/Temp/"{{ user_data }}"
