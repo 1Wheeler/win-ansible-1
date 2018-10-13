@@ -19,11 +19,23 @@
       setup: ~
     
 
-    - name: Make a couple Directories
+    - name: Make a couple Directories1
       win_file:
               path: "C:\\Temp\\{{ user_data.Directory1 }}"
+              state: directory
+    
+    - name: Make a couple Directories2
+      win_file:
               path: "C:\\Temp\\{{ user_data.Directory2 }}"
+              state: directory
+              
+    - name: Make a couple Directories3
+      win_file:
               path: "C:\\Temp\\{{ user_data.Directory3 }}"
+              state: directory
+      
+    - name: Make a couple Directories4
+      win_file:
               path: "C:\\Temp\\{{ user_data.Directory4 }}"
               state: directory
       
