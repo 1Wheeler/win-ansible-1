@@ -22,13 +22,8 @@
     - name: Make a couple Directories
       win_file:
               path: "C:\\Temp\\{{ user_data.Directory1 }}"
-              state: directory
-      win_file:
               path: "C:\\Temp\\{{ user_data.Directory2 }}"
-              state: directory
-      win_file:
               path: "C:\\Temp\\{{ user_data.Directory3 }}"
-              state: directory        
-      win_file:
               path: "C:\\Temp\\{{ user_data.Directory4 }}"
               state: directory
+      
