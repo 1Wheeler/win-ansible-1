@@ -20,6 +20,6 @@
 
     - name: Make a couple Directories
       win_file:
-              path: C:\\Temp\\"{{ user_data.Directory1 }}" 
+              path: "C:\\Temp\\{{ user_data.Directory1 }}" 
               state: directory
 
