@@ -22,5 +22,4 @@
       win_file:
               path: C:\\Temp\\"{{ user_data.Directory1 }}" 
               state: directory
-      with_items:
 
