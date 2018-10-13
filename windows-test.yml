@@ -4,27 +4,18 @@
     user_data_file: 'C:\Windows\ansiblevars.json'
   gather_facts: false
 
-
-
   tasks:
     - name: Load data
       slurp:
         src: "{{ user_data_file }}"
       register: slurped_user_data
 
-
-
-
     - name: Decode data and store as fact # You can skip this if you want to use the right hand side directly...
       set_fact:
         user_data: "{{ slurped_user_data.content | b64decode }}"
     - debug: var=slurped_user_data
     - debug:
-        msg: "{{ slurped_user_data['content'] | b64decode }}"
-
-
-
-
+        msg: "{{ slurped_user_data }}"
 
     - name: Make a couple Directories
       win_file:
