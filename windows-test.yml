@@ -17,12 +17,14 @@
         msg: "{{ slurped_user_data.content | b64decode }}"
 
 
-    - debug: var= "Directory1"
+    - name: See if Directory1 is a var
+        debug: var= "Directory1"
     
     - name: "Re-run setup to use custom facts"
       setup: ~
     
-    - debug: var=Directory1
+    - name: See if Directory1 is a var
+        debug: var= "Directory1"
         
     - name: Make a couple Directories
       win_file:
