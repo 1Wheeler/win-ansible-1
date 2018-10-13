@@ -16,10 +16,11 @@
     - debug:
         msg: "{{ slurped_user_data.content | b64decode }}"
 
-    - name: get facts
-        user_data:
 
     - debug: var=Directory1
+    
+    - name: "Re-run setup to use custom facts"
+       setup: ~
     
     - name: Make a couple Directories
       win_file:
