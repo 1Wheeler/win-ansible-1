@@ -14,7 +14,7 @@
       set_fact:
         user_data: "{{ slurped_user_data.content | b64decode }}"
     - debug:
-        msg: "{{ slurped_user_data }}"
+        msg: "{{ slurped_user_data.content | b64decode }}"
 
     - name: Make a couple Directories
       win_file:
