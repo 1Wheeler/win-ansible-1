@@ -23,6 +23,6 @@
       win_file:
               path: "C:\\Temp\\{{ item }}"
               with_items: 
-                - "{{ nested_list }}"
+                - "{{ user_data }}"
               state: directory
               
